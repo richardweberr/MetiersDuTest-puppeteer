@@ -13,6 +13,7 @@ describe("Tests basiques", () => {
         // récupérer le contenu de l'élément <body>
         const html = await page.$eval('body', e => e.innerHTML)
         // vérifier que dans cet élément Body on trouve "Polr du campus"
+        await page.screenshot({path: './tests/img/basic-home.png'});
         expect(html).toContain("Polr du campus")
     }, timeout)
 
@@ -21,8 +22,7 @@ describe("Tests basiques", () => {
         await page.goto('http://polr.campus-grenoble.fr')
         await page.waitForSelector('#navbar li a')
         // click sur le lien "About" de la navigation
-        await page.evaluate( () =>
-        {
+        await page.evaluate( () => {
             Array
                 .from( document.querySelectorAll( '#navbar li a' ) )
                 .filter( el => el.textContent === 'About' )[0].click();
