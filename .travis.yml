@@ -8,7 +8,7 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
 
 script:
-  - yarn ci
+  - yarn test
 
 notifications:
   email: false
