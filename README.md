@@ -1,6 +1,8 @@
 Tests avec puppeteer
 ====================
 
+[![Build Status](https://travis-ci.org/campus-digital-grenoble/module-test-puppeteer.svg?branch=master)](https://travis-ci.org/campus-digital-grenoble/module-test-puppeteer)
+
 Quick start
 -----------
 
