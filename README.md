@@ -19,3 +19,11 @@ Les premiers fichiers à regarder sont dans l'ordre :
 
 * tests/basic.test.js
 * tests/shorten.test.js
+
+Principe
+--------
+
+Ces tests utilisent 2 outils :
+
+* Jest : c'est l'outil de tests utilisé principalement par React (un framework JS, comme VueJS)
+* Puppeteer : un outil qui permet de contrôler le navigateur chrome à distance
