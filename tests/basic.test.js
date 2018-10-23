@@ -43,10 +43,4 @@ describe("Tests basiques", () => {
         page = await global.__BROWSER__.newPage()
     }, timeout)
 
-    // cette fonction est lancée après chaque test de cette
-    // série
-    afterAll(async () => {
-        // on referme l'onglet du navigateur
-        page.close()
-    }, timeout)
 })
