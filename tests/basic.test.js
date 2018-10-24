@@ -1,4 +1,4 @@
-const timeout = 10000
+const timeout = 15000
 
 // série de tests sur la page d'accueil
 describe("Tests basiques", () => {
