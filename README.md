@@ -10,8 +10,8 @@ Quick start
 # installer puppeteer à partir du packagge.json
 npm install
 
-# lancer les tests
-npm test
+# lancer les tests (de façon séquencielle)
+npm test -- --runInBand
 ```
 
 Ce qu'il faut regarder
