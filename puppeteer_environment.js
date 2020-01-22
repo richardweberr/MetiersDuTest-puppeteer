@@ -22,7 +22,7 @@ class PuppeteerEnvironment extends NodeEnvironment {
         this.global.__BROWSER__ = await puppeteer.connect({
             browserWSEndpoint: wsEndpoint,
         })
-        this.global.baseUrl = 'http://cliiink.dev.com'
+        this.global.baseUrl = 'https://polr.kitservice.net'
     }
 
     async teardown() {
